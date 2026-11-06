@@ -1,0 +1,7 @@
+node_modules/
+data/
+uploads/
+.DS_Store
+.claude/
+# Source images used to make the product photos; the app does not need them.
+Gemini_Generated_Image_*.png

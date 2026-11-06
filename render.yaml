@@ -1,0 +1,18 @@
+# Render Blueprint: all seven demo apps in one web service, each under a path
+# prefix (/gmail, /oracle, /shopify, /store, /amazon, /sheets, /noah-gmail).
+# The home page of the service lists them all, with reset links.
+services:
+  - type: web
+    name: seek-demo-apps
+    runtime: node
+    plan: free
+    buildCommand: npm ci
+    startCommand: node server.js
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      # Starting data after each deploy or restart: "default" (both requests
+      # already in Seek's inbox) or "noah" (Noah sends them on camera).
+      - key: SEED_MODE
+        value: default
