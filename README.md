@@ -69,3 +69,4 @@ Data lives in `data/store.json` on the server's disk. On Render's free plan that
 
 SOP PDFs with Render addresses: `node scripts/build-render-sops.js https://<service>.onrender.com` writes the "(Render)" editions in `docs/`.
 # retail-demo
+# retail-demo
