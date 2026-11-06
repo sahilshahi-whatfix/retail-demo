@@ -68,3 +68,4 @@ The apps' pages use root paths (`/items/...`); `lib/prefix.js` adds the prefix t
 Data lives in `data/store.json` on the server's disk. On Render's free plan that disk is temporary: the data goes back to the seed on every deploy, restart or sleep (after 15 minutes idle). `SEED_MODE` in `render.yaml` picks which seed: `default` or `noah`.
 
 SOP PDFs with Render addresses: `node scripts/build-render-sops.js https://<service>.onrender.com` writes the "(Render)" editions in `docs/`.
+# retail-demo
